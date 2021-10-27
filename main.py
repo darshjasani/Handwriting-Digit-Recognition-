@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
-from keras.models import load_model
+import keras 
 import streamlit as st
 from PIL import Image,ImageChops
 
-model = load_model("HWD.h5")
+model = keras.models.load_model("HWD.h5")
 
 def main():
     st.title("Handwriting digit recongization model using python")
